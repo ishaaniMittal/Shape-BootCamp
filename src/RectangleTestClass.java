@@ -11,7 +11,11 @@ public class RectangleTestClass {
 
     @Test
     public void testToCalculateAreaOfRectangle(){
-        assertEquals(12,rec.calculateArea(rec));
+        assertEquals(12, rec.calculateArea(),2);
     }
 
+    @Test
+    public void testToCalculatePerimeterOfRectangle(){
+        assertEquals(14,rec.calculatePerimeter(),2);
+    }
 }

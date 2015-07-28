@@ -3,28 +3,23 @@
  */
 public class Rectangle {
 
-    private int length;
-    private int breath;
+    private double length;
+    private double breath;
 
-    public int getLength() {
-        return length;
-    }
 
-    public int getBreath() {
-        return breath;
-    }
-
-    public Rectangle(int length, int breath) {
+    public Rectangle(double length, double breath) {
         this.length = length;
         this.breath = breath;
     }
 
-    public int calculateArea(int length, int breath){
+    public double calculateArea(){
         return length*breath;
     }
 
-    public int calculateArea(Rectangle r){
-        return r.getLength()*r.getBreath();
+    public double calculatePerimeter(){
+        return 2*(length+breath);
     }
+
+
 
 }
