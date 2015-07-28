@@ -1,11 +1,14 @@
 /**
  * Created by IShAani on 28-07-2015.
  */
-public class Rectangle {
+public class Rectangle implements Shape {
 
     private double length;
     private double breath;
 
+    public Rectangle(){
+        
+    }
 
     public Rectangle(double length, double breath) {
         this.length = length;
